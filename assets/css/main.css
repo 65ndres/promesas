@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1176,6 +1179,150 @@ input, select, textarea {
 		body.is-preload #bg:before {
 			background-color: #000000;
 		}
+
+/* App landing overrides */
+
+	/* Make the header work like a modern app hero (without breaking the article system). */
+	#header.app-header {
+		width: 100%;
+		max-width: 1100px;
+		text-align: left;
+		background-image: none;
+	}
+
+		#header.app-header > * {
+			margin-top: 0;
+		}
+
+		#header.app-header > *:before {
+			display: none;
+		}
+
+	/* Top navigation */
+	.app-nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.25rem;
+		padding: 0.5rem 0;
+		width: 100%;
+	}
+
+	.app-brand {
+		border-bottom: 0;
+		font-weight: 600;
+		letter-spacing: 0.08rem;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	.app-nav-links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		flex: 1;
+	}
+
+	.app-nav-links a {
+		border-bottom: 0;
+		opacity: 0.9;
+		font-size: 0.85rem;
+		letter-spacing: 0.12rem;
+		text-transform: uppercase;
+	}
+
+	.app-nav-links a:hover {
+		opacity: 1;
+	}
+
+	/* Hero */
+	.app-hero {
+		display: grid;
+		grid-template-columns: 1.1fr 0.9fr;
+		align-items: center;
+		gap: 3rem;
+		padding: 4rem 0 1rem 0;
+		width: 100%;
+	}
+
+	.app-hero-title {
+		text-transform: none;
+		letter-spacing: 0;
+		font-size: 3rem;
+		line-height: 1.1;
+		margin-bottom: 1.25rem;
+	}
+
+	.app-hero-subtitle {
+		opacity: 0.9;
+		font-size: 1.1rem;
+		max-width: 36rem;
+	}
+
+	.app-hero-actions {
+		margin-top: 2rem;
+	}
+
+	/* “Phone” mock image (replace with your real screenshot later) */
+	.app-hero-media img {
+		/* width: 100%;
+		max-width: 420px;
+		margin-left: auto; */
+		/* box-shadow: 0 20px 80px rgba(0,0,0,0.35); */
+		max-width: 250px;
+	}
+
+	/* Make buttons/links read as white UI */
+	#header.app-header a,
+	#header.app-header p,
+	#header.app-header h1,
+	#header.app-header h2,
+	#header.app-header h3 {
+		color: #ffffff;
+	}
+
+	/* Ensure header CTA is clearly white */
+	#header.app-header .app-cta {
+		white-space: nowrap;
+	}
+
+	/* Background overlay tweak for better readability on photos */
+	#bg:before {
+		background-image:
+			linear-gradient(to bottom, rgba(12, 14, 18, 0.55), rgba(12, 14, 18, 0.65)),
+			url("../../images/overlay.png");
+	}
+
+	@media screen and (max-width: 980px) {
+		#header.app-header {
+			max-width: 800px;
+		}
+
+		.app-hero {
+			grid-template-columns: 1fr;
+			padding-top: 3rem;
+		}
+
+		.app-hero-media img {
+			margin: 0 auto;
+			max-width: 360px;
+		}
+
+		.app-nav-links {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		.app-hero-title {
+			font-size: 2.2rem;
+		}
+
+		.app-hero {
+			gap: 2rem;
+		}
+	}
 
 /* Wrapper */
 

@@ -112,6 +112,63 @@
 								</ul>
 							</article>
 
+						<!-- Privacy Policy -->
+							<article id="privacy">
+								<h2 class="major">Privacy Policy</h2>
+								<p><strong>Last Updated:</strong> <span id="privacy-date"></span></p>
+								
+								<h3>Introduction</h3>
+								<p>Promesas ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App"). Please read this Privacy Policy carefully. By using the App, you agree to the collection and use of information in accordance with this policy.</p>
+
+								<h3>Information We Collect</h3>
+								<p>Promesas is designed with privacy in mind. We collect minimal information necessary to provide you with the best experience:</p>
+								<ul>
+									<li><strong>Local Data:</strong> The App stores your favorite verses and preferences locally on your device. This information is not transmitted to our servers.</li>
+									<li><strong>Usage Data:</strong> We may collect anonymous usage statistics to improve the App's performance and user experience. This data does not personally identify you.</li>
+								</ul>
+
+								<h3>How We Use Your Information</h3>
+								<p>We use the information we collect to:</p>
+								<ul>
+									<li>Provide, maintain, and improve the App's functionality</li>
+									<li>Personalize your experience within the App</li>
+									<li>Analyze usage patterns to enhance user experience</li>
+									<li>Respond to your inquiries and provide customer support</li>
+								</ul>
+
+								<h3>Data Storage and Security</h3>
+								<p>Your personal data, including favorite verses and preferences, is stored locally on your device. We do not transmit this data to external servers. We implement appropriate technical and organizational measures to protect your information, though no method of transmission over the Internet or electronic storage is 100% secure.</p>
+
+								<h3>Third-Party Services</h3>
+								<p>The App may use third-party services that have their own privacy policies. We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies.</p>
+								<ul>
+									<li><strong>Apple App Store:</strong> When you download the App through the Apple App Store, your use is also governed by Apple's Privacy Policy and Terms of Service.</li>
+								</ul>
+
+								<h3>Children's Privacy</h3>
+								<p>The App is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can delete such information.</p>
+
+								<h3>Your Rights</h3>
+								<p>You have the right to:</p>
+								<ul>
+									<li>Access and review your local data stored in the App</li>
+									<li>Delete your local data at any time by uninstalling the App</li>
+									<li>Opt out of any data collection features (if applicable)</li>
+								</ul>
+
+								<h3>Changes to This Privacy Policy</h3>
+								<p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+								<h3>Contact Us</h3>
+								<p>If you have any questions about this Privacy Policy, please contact us:</p>
+								<ul>
+									<li>Through the contact form on this website</li>
+									<li>Via email at the contact address provided in the App Store listing</li>
+								</ul>
+
+								<p><em>By using Promesas, you acknowledge that you have read and understood this Privacy Policy.</em></p>
+							</article>
+
 						<!-- Elements -->
 							<article id="elements">
 								<h2 class="major">Elements</h2>
@@ -358,7 +415,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Promesas. Built for iOS.</p>
+						<p class="copyright">&copy; Promesas. Built for iOS. <a href="#privacy">Privacy Policy</a></p>
 					</footer>
 
 			</div>
@@ -372,6 +429,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Set privacy policy date
+				document.addEventListener('DOMContentLoaded', function() {
+					var dateElement = document.getElementById('privacy-date');
+					if (dateElement) {
+						var today = new Date();
+						var options = { year: 'numeric', month: 'long', day: 'numeric' };
+						dateElement.textContent = today.toLocaleDateString('en-US', options);
+					}
+				});
+			</script>
 
 	</body>
 </html>

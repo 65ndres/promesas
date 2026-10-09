@@ -329,6 +329,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 	.feature-media .phone { width: 260px; }
 
+	.feature-media.pair { gap: 1rem; align-items: flex-start; }
+
+	.feature-media.pair .phone { width: 220px; height: auto; }
+
 	.feature-copy h2 { font-size: clamp(1.8rem, 3.2vw, 2.5rem); margin-bottom: 1.1rem; }
 
 	.feature-copy p { color: var(--text-soft); font-size: 1.1rem; margin-bottom: 1.5rem; }
@@ -524,6 +528,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 		.feature-media { padding: 1.5rem; }
 
 		.feature-media .phone { width: 220px; }
+
+		.feature-media.pair { padding: 1.5rem 0; gap: 0.75rem; }
+
+		.feature-media.pair .phone { width: calc(50% - 0.375rem); max-width: 170px; }
 
 		.button.large { font-size: 0.72rem; letter-spacing: 0.12rem; padding: 0 1.2rem; }
 

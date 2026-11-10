@@ -1,16 +1,46 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<title>Promesas — Daily Bible Promises for iOS</title>
+		<title>Contact Promesas — We're here to help</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Promesas helps you find God's promises for every moment. Search by category, get a promise picked for you, and save your favorites." />
-		<link rel="icon" href="images/splash-icon.png" />
+		<meta name="description" content="Questions, feedback or a problem with the Promesas app? Send our team a message and we'll get back to you." />
+		<link rel="canonical" href="https://web.promesas-app.com/" />
+		<meta name="apple-itunes-app" content="app-id=6755903369" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Promesas" />
+		<meta property="og:title" content="Contact Promesas — We're here to help" />
+		<meta property="og:description" content="Questions, feedback or a problem with the Promesas app? Send our team a message and we'll get back to you." />
+		<meta property="og:url" content="https://web.promesas-app.com/" />
+		<meta property="og:image" content="https://web.promesas-app.com/images/og-card.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Promesas app: God's promises for every day" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Promesas",
+			"url": "https://web.promesas-app.com/",
+			"logo": "https://web.promesas-app.com/images/apple-touch-icon.png",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"contactType": "customer support",
+				"email": "promesas.app.support@gmail.com",
+				"availableLanguage": ["English", "Spanish"]
+			}
+		}
+		</script>
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600&display=swap" />
 		<link rel="stylesheet" href="assets/css/landing.css" />
 	</head>
 	<body>
+
+		<a class="skip-link" href="#contact" data-i18n="skip">Skip to contact form</a>
 
 		<!-- BG -->
 			<div id="bg" aria-hidden="true"></div>
@@ -19,15 +49,20 @@
 			<header class="nav" id="top">
 				<div class="container nav-inner">
 					<a class="brand" href="#top">
-						<img src="images/splash-icon.png" alt="" />
+						<img src="images/icon-256.webp" width="256" height="256" alt="" />
 						<span>Promesas</span>
 					</a>
 					<nav class="nav-links" aria-label="Primary">
-						<a href="#features">Features</a>
-						<a href="#how">How it works</a>
-						<a href="#faq">FAQ</a>
+						<a href="#help" data-i18n="nav.help">How we help</a>
+						<a href="#contact" data-i18n="nav.contact">Contact</a>
 					</nav>
-					<a class="button primary small" href="https://apps.apple.com/us/app/promesas/id6755903369">Get the app</a>
+					<div class="nav-end">
+						<div class="lang-toggle" role="group" aria-label="Language / Idioma">
+							<button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+							<button type="button" data-lang="es" aria-pressed="false" lang="es">ES</button>
+						</div>
+						<a class="button primary small nav-cta" href="#contact" data-i18n="nav.cta">Write to us</a>
+					</div>
 				</div>
 			</header>
 
@@ -38,245 +73,113 @@
 					<div class="container hero-inner">
 						<div class="hero-copy">
 							<h1 class="hero-title">
-								God's<br />
-								<span class="hl">promises</span><br />
-								for every day
+								<span data-i18n="hero.l1">We're</span><br />
+								<span class="hl" data-i18n="hero.l2">here</span><br />
+								<span data-i18n="hero.l3">for you</span>
 							</h1>
-							<p class="hero-subtitle">
-								Open the app to a verse hand-picked by our team, get promises chosen for your interests, or search by hope, strength or peace — and keep your favorites close.
+							<p class="hero-subtitle" data-i18n="hero.sub">
+								Promesas is a small team helping people find God's promises for every moment. Have a question, an idea or something that isn't working? Send us a message — a real person will read it.
 							</p>
 							<ul class="actions">
-								<li><a href="https://apps.apple.com/us/app/promesas/id6755903369" class="button primary large"><i class="fab fa-apple"></i> Download on the App Store</a></li>
+								<li><a href="#contact" class="button primary large"><i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="hero.cta">Send us a message</span></a></li>
 							</ul>
-							<p class="hero-note"><i class="fas fa-lock"></i> Your favorites stay on your device</p>
+							<p class="hero-note">
+								<span data-i18n="hero.note">Prefer your own inbox? Email</span>
+								<a class="mail-link" href="mailto:promesas.app.support@gmail.com">promesas.app.support@gmail.com</a>
+							</p>
 						</div>
 						<div class="hero-media">
-							<img class="phone phone-back" src="images/screens/for_you.png" alt="Promesas For You screen with a verse chosen for your interests" />
-							<img class="phone phone-front" src="images/screens/home.png" alt="Promesas home screen with a verse curated by the Promesas team" />
+							<img class="phone phone-back" src="images/screens/home.webp" width="588" height="1200" alt="" />
+							<img class="phone phone-front" src="images/screens/support.webp" width="588" height="1200" fetchpriority="high" alt="Promesas support screen with a welcome message from the team" data-i18n-alt="hero.alt" />
 						</div>
 					</div>
 				</section>
 
-			<!-- Verse marquee -->
-				<section class="marquee" aria-label="Sample promises">
-					<div class="marquee-track">
-						<figure class="quote"><blockquote>“You will keep in perfect peace those whose minds are steadfast, because they trust in you.”</blockquote><figcaption>Isaiah 26:3</figcaption></figure>
-						<figure class="quote"><blockquote>“Be strong in the Lord and in his mighty power.”</blockquote><figcaption>Ephesians 6:10</figcaption></figure>
-						<figure class="quote"><blockquote>“I can do all this through him who gives me strength.”</blockquote><figcaption>Philippians 4:13</figcaption></figure>
-						<figure class="quote"><blockquote>“The Lord is my shepherd, I lack nothing.”</blockquote><figcaption>Psalm 23:1</figcaption></figure>
-						<figure class="quote"><blockquote>“Cast all your anxiety on him because he cares for you.”</blockquote><figcaption>1 Peter 5:7</figcaption></figure>
-						<figure class="quote"><blockquote>“Trust in the Lord with all your heart and lean not on your own understanding.”</blockquote><figcaption>Proverbs 3:5</figcaption></figure>
-						<!-- Duplicated for a seamless loop -->
-						<figure class="quote" aria-hidden="true"><blockquote>“You will keep in perfect peace those whose minds are steadfast, because they trust in you.”</blockquote><figcaption>Isaiah 26:3</figcaption></figure>
-						<figure class="quote" aria-hidden="true"><blockquote>“Be strong in the Lord and in his mighty power.”</blockquote><figcaption>Ephesians 6:10</figcaption></figure>
-						<figure class="quote" aria-hidden="true"><blockquote>“I can do all this through him who gives me strength.”</blockquote><figcaption>Philippians 4:13</figcaption></figure>
-						<figure class="quote" aria-hidden="true"><blockquote>“The Lord is my shepherd, I lack nothing.”</blockquote><figcaption>Psalm 23:1</figcaption></figure>
-						<figure class="quote" aria-hidden="true"><blockquote>“Cast all your anxiety on him because he cares for you.”</blockquote><figcaption>1 Peter 5:7</figcaption></figure>
-						<figure class="quote" aria-hidden="true"><blockquote>“Trust in the Lord with all your heart and lean not on your own understanding.”</blockquote><figcaption>Proverbs 3:5</figcaption></figure>
-					</div>
-				</section>
-
-			<!-- Feature grid -->
-				<section class="section" id="features">
+			<!-- How we can help -->
+				<section class="section" id="help">
 					<div class="container">
-						<h2 class="section-title">Time in the Word, made simple</h2>
+						<h2 class="section-title" data-i18n="help.title">How we can help</h2>
 						<div class="grid">
 							<article class="card">
-								<span class="card-icon"><i class="fas fa-dove"></i></span>
-								<h3>Curated by our team</h3>
-								<p>Every time you open the app, the home screen greets you with a verse hand-picked by the Promesas staff.</p>
+								<span class="card-icon" aria-hidden="true"><i class="fas fa-question"></i></span>
+								<h3 data-i18n="help.q.t">Questions about the app</h3>
+								<p data-i18n="help.q.d">Not sure how something works? Ask, and we'll walk you through it.</p>
 							</article>
 							<article class="card">
-								<span class="card-icon"><i class="fas fa-star"></i></span>
-								<h3>Made for you</h3>
-								<p>Tell us what you care about and “For You” brings verses chosen around your interests.</p>
+								<span class="card-icon" aria-hidden="true"><i class="fas fa-tools"></i></span>
+								<h3 data-i18n="help.b.t">Report a problem</h3>
+								<p data-i18n="help.b.d">Something not working right? Tell us what happened and we'll fix it.</p>
 							</article>
 							<article class="card">
-								<span class="card-icon"><i class="fas fa-search"></i></span>
-								<h3>Search by what you feel</h3>
-								<p>Browse promises by category — faith, encouragement, peace, anxiety and more.</p>
+								<span class="card-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></span>
+								<h3 data-i18n="help.f.t">Ideas &amp; feedback</h3>
+								<p data-i18n="help.f.d">A verse, a category or a feature you'd love to see? We're listening.</p>
 							</article>
 							<article class="card">
-								<span class="card-icon"><i class="fas fa-user-shield"></i></span>
-								<h3>Private by design</h3>
-								<p>Your favorites and preferences are stored on your device, not on our servers.</p>
+								<span class="card-icon" aria-hidden="true"><i class="fas fa-dove"></i></span>
+								<h3 data-i18n="help.o.t">Anything else</h3>
+								<p data-i18n="help.o.d">Partnerships, press or just a kind word — we'd love to hear from you.</p>
 							</article>
 						</div>
 					</div>
 				</section>
 
-			<!-- Feature rows -->
-				<section class="section" id="how">
+			<!-- Contact -->
+				<section class="section" id="contact">
 					<div class="container">
-						<div class="feature-row">
-							<div class="feature-media pair">
-								<img class="phone" src="images/screens/categories.png" alt="Your Choice screen showing the Encouragement category" />
-								<img class="phone" src="images/screens/categories-2.png" alt="Your Choice screen showing the Faith category" />
-							</div>
-							<div class="feature-copy">
-								<span class="eyebrow">Your Choice</span>
-								<h2>A promise for exactly where you are</h2>
-								<p>Pick a category and Promesas brings you verses that speak to it. Need encouragement? Want to grow in faith? Switch topics in a tap and keep reading.</p>
+						<div class="contact">
+							<div class="contact-intro">
+								<span class="eyebrow" data-i18n="contact.eyebrow">Get in touch</span>
+								<h2 data-i18n="contact.title">Send us a message</h2>
+								<p data-i18n="contact.sub">Fill in the form and your email app will open with your message ready to send. We usually reply within a couple of days.</p>
 								<ul class="checks">
-									<li><i class="fas fa-check"></i> Browse verses by category</li>
-									<li><i class="fas fa-check"></i> Clean, distraction-free reading</li>
-									<li><i class="fas fa-check"></i> Share or save any verse</li>
+									<li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="contact.c1">Real people, not a help center maze</span></li>
+									<li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="contact.c2">Write in English or Spanish</span></li>
+									<li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="contact.c3">Your details are only used to reply to you</span></li>
 								</ul>
+								<div class="contact-direct">
+									<span class="contact-direct-label" data-i18n="contact.direct">Or email us directly</span>
+									<a class="mail-link" href="mailto:promesas.app.support@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> promesas.app.support@gmail.com</a>
+								</div>
+							</div>
+
+							<div class="contact-panel">
+								<form id="contact-form" class="contact-form" action="mailto:promesas.app.support@gmail.com" method="post" enctype="text/plain" novalidate>
+									<div class="field">
+										<label for="cf-name" data-i18n="form.name">Your name</label>
+										<input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="100" aria-describedby="cf-name-err" />
+										<p class="field-error" id="cf-name-err" aria-live="polite"></p>
+									</div>
+									<div class="field">
+										<label for="cf-email" data-i18n="form.email">Your email</label>
+										<input id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="200" aria-describedby="cf-email-err" />
+										<p class="field-error" id="cf-email-err" aria-live="polite"></p>
+									</div>
+									<div class="field">
+										<label for="cf-message" data-i18n="form.message">How can we help?</label>
+										<textarea id="cf-message" name="message" rows="6" required minlength="10" maxlength="2000" aria-describedby="cf-message-err"></textarea>
+										<p class="field-error" id="cf-message-err" aria-live="polite"></p>
+									</div>
+									<button type="submit" class="button primary large form-submit"><i class="fas fa-paper-plane" aria-hidden="true"></i> <span data-i18n="form.submit">Send message</span></button>
+									<p class="form-hint" data-i18n="form.hint">This opens your email app. Nothing is sent until you press send there.</p>
+								</form>
+
+								<div class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1" hidden>
+									<span class="card-icon" aria-hidden="true"><i class="fas fa-envelope-open-text"></i></span>
+									<h3 data-i18n="done.title">Almost there!</h3>
+									<p data-i18n="done.body">Your email app should now be open with your message. Press send there and we'll get back to you soon.</p>
+									<p class="form-status-fallback">
+										<span data-i18n="done.fallback">Didn't open? Email us at</span>
+										<a class="mail-link" href="mailto:promesas.app.support@gmail.com">promesas.app.support@gmail.com</a>
+									</p>
+									<ul class="actions center">
+										<li><button type="button" class="button small" id="copy-message" data-i18n="done.copy">Copy my message</button></li>
+										<li><button type="button" class="button small" id="new-message" data-i18n="done.again">Write another</button></li>
+									</ul>
+									<p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
+								</div>
 							</div>
 						</div>
-
-						<div class="feature-row reverse">
-							<div class="feature-media">
-								<img class="phone" src="images/screens/for_you.png" alt="For You screen showing a verse chosen for your interests" />
-							</div>
-							<div class="feature-copy">
-								<span class="eyebrow">For You</span>
-								<h2>Verses chosen around your interests</h2>
-								<p>Select the interests that matter to you and “For You” picks verses based on them — a feed of promises customized for you, not for everyone.</p>
-								<ul class="checks">
-									<li><i class="fas fa-check"></i> Based on the interests you select</li>
-									<li><i class="fas fa-check"></i> Customized for each person</li>
-									<li><i class="fas fa-check"></i> A fresh verse whenever you need one</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="feature-row">
-							<div class="feature-media">
-								<img class="phone" src="images/screens/liked.png" alt="Liked Verses screen listing saved verses" />
-							</div>
-							<div class="feature-copy">
-								<span class="eyebrow">Liked Verses</span>
-								<h2>Your personal collection of encouragement</h2>
-								<p>Tap the heart on any verse to save it. All your liked verses live in one list, ready to revisit whenever you need them.</p>
-								<ul class="checks">
-									<li><i class="fas fa-check"></i> Save any verse with one tap</li>
-									<li><i class="fas fa-check"></i> All your favorites in one place</li>
-									<li><i class="fas fa-check"></i> Stored privately on your device</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="feature-row reverse">
-							<div class="feature-media">
-								<img class="phone" src="images/screens/songs.png" alt="Sounds screen with Kyrie, Gloria, Sanctus and Agnus Dei" />
-							</div>
-							<div class="feature-copy">
-								<span class="eyebrow">Soothing Chants</span>
-								<h2>Sacred songs for prayer and rest</h2>
-								<p>Quiet your mind with sacred chants — Kyrie, Gloria, Sanctus and Agnus Dei. Play one while you pray, read or wind down for the night.</p>
-								<ul class="checks">
-									<li><i class="fas fa-check"></i> Four sacred chants built in</li>
-									<li><i class="fas fa-check"></i> Simple, one-tap playback</li>
-									<li><i class="fas fa-check"></i> Volume control right on screen</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="feature-row">
-							<div class="feature-media">
-								<img class="phone" src="images/screens/widget.png" alt="Promesas widget on the iPhone home screen showing Ephesians 1:3" />
-							</div>
-							<div class="feature-copy">
-								<span class="eyebrow">Widget</span>
-								<h2>A promise on your home screen</h2>
-								<p>Add the Promesas widget and see a verse every time you pick up your phone — no need to open the app.</p>
-								<ul class="checks">
-									<li><i class="fas fa-check"></i> God's word at a glance</li>
-									<li><i class="fas fa-check"></i> Matches the Promesas look</li>
-									<li><i class="fas fa-check"></i> Tap to open the app</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="feature-row reverse">
-							<div class="feature-media">
-								<img class="phone" src="images/screens/support.png" alt="Support chat screen with a welcome message from the Promesas team" />
-							</div>
-							<div class="feature-copy">
-								<span class="eyebrow">Support</span>
-								<h2>We're here for you</h2>
-								<p>Have a question or need a hand? Send us a message right from the app and our team will get back to you.</p>
-								<ul class="checks">
-									<li><i class="fas fa-check"></i> Chat with us inside the app</li>
-									<li><i class="fas fa-check"></i> Real people, not a help center maze</li>
-									<li><i class="fas fa-check"></i> Questions and feedback always welcome</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Topics band -->
-				<section class="section">
-					<div class="container">
-						<div class="band">
-							<h2>Promises for every season of life</h2>
-							<p>Whatever you're carrying today, there's a word for it.</p>
-							<ul class="chips">
-								<li>Hope</li>
-								<li>Strength</li>
-								<li>Peace</li>
-								<li>Anxiety</li>
-								<li>Faith</li>
-								<li>Love</li>
-								<li>Comfort</li>
-								<li>Encouragement</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-			<!-- FAQ -->
-				<section class="section" id="faq">
-					<div class="container narrow">
-						<h2 class="section-title">Questions &amp; answers</h2>
-						<div class="faq">
-							<details>
-								<summary>What is Promesas?</summary>
-								<p>Promesas is an iOS app that helps you find Bible promises for the moment you're in. Start with a verse curated by our team, get verses chosen for your interests, browse by category, listen to sacred chants and save the verses that speak to you.</p>
-							</details>
-							<details>
-								<summary>How do I find a promise for how I'm feeling?</summary>
-								<p>Open “Your Choice”, pick a category like hope, strength, peace or anxiety, and Promesas will show you verses for it.</p>
-							</details>
-							<details>
-								<summary>Can I save verses?</summary>
-								<p>Yes. Tap the heart on any verse and it's added to your Liked Verses, ready to revisit anytime.</p>
-							</details>
-							<details>
-								<summary>How does “For You” work?</summary>
-								<p>Select the interests that matter to you and “For You” chooses verses based on them, so what you see is customized for you.</p>
-							</details>
-							<details>
-								<summary>Is there a home screen widget?</summary>
-								<p>Yes. Add the Promesas widget to your iPhone home screen to see a verse at a glance.</p>
-							</details>
-							<details>
-								<summary>Is my data private?</summary>
-								<p>Your favorites and preferences are stored locally on your device and aren't sent to our servers. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
-							</details>
-							<details>
-								<summary>How do I get help?</summary>
-								<p>Open Support in the app and send us a message. Our team will reply right there.</p>
-							</details>
-							<details>
-								<summary>Which devices are supported?</summary>
-								<p>Promesas is available for iPhone on the Apple App Store.</p>
-							</details>
-						</div>
-					</div>
-				</section>
-
-			<!-- Final CTA -->
-				<section class="section cta" id="download">
-					<div class="container">
-						<img class="cta-logo" src="images/splash-icon.png" alt="" />
-						<h2>Faith for real life.</h2>
-						<p>Download Promesas and start each day with a promise.</p>
-						<ul class="actions center">
-							<li><a href="https://apps.apple.com/us/app/promesas/id6755903369" class="button primary large"><i class="fab fa-apple"></i> Download on the App Store</a></li>
-						</ul>
 					</div>
 				</section>
 
@@ -287,37 +190,274 @@
 				<div class="container footer-inner">
 					<div class="footer-brand">
 						<a class="brand" href="#top">
-							<img src="images/splash-icon.png" alt="" />
+							<img src="images/icon-256.webp" width="256" height="256" alt="" loading="lazy" />
 							<span>Promesas</span>
 						</a>
-						<p>Daily Bible promises for iOS.</p>
+						<p data-i18n="footer.tag">God's promises for every day.</p>
 					</div>
 					<div class="footer-col">
-						<h4>App</h4>
-						<a href="#features">Features</a>
-						<a href="#how">How it works</a>
-						<a href="https://apps.apple.com/us/app/promesas/id6755903369">Download</a>
+						<h4 data-i18n="footer.contact">Contact</h4>
+						<a href="mailto:promesas.app.support@gmail.com" class="footer-mail">promesas.app.support@gmail.com</a>
+						<a href="#contact" data-i18n="footer.form">Contact form</a>
 					</div>
 					<div class="footer-col">
-						<h4>Help</h4>
-						<a href="#faq">FAQ</a>
-						<a href="privacy.html">Privacy Policy</a>
+						<h4 data-i18n="footer.more">More</h4>
+						<a href="https://apps.apple.com/us/app/promesas/id6755903369" data-i18n="footer.app">Get the iOS app</a>
+						<a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
 					</div>
 				</div>
 				<div class="container footer-bottom">
-					<p>&copy; <span class="year"></span> Promesas. Built for iOS.</p>
+					<p>&copy; <span class="year"></span> Promesas.</p>
 				</div>
 			</footer>
 
 		<script>
-			// The privacy policy used to live at #privacy; keep old links working
-			if (location.hash === '#privacy') location.replace('privacy.html');
-			document.querySelectorAll('.year').forEach(function (el) { el.textContent = new Date().getFullYear(); });
-			// Shadow the nav once the page scrolls
-			var nav = document.querySelector('.nav');
-			var onScroll = function () { nav.classList.toggle('is-scrolled', window.scrollY > 8); };
-			window.addEventListener('scroll', onScroll, { passive: true });
-			onScroll();
+			(function () {
+				var EMAIL = 'promesas.app.support@gmail.com';
+
+				var I18N = {
+					en: {
+						'meta.title': "Contact Promesas — We're here to help",
+						'skip': 'Skip to contact form',
+						'nav.help': 'How we help',
+						'nav.contact': 'Contact',
+						'nav.cta': 'Write to us',
+						'hero.l1': "We're",
+						'hero.l2': 'here',
+						'hero.l3': 'for you',
+						'hero.sub': "Promesas is a small team helping people find God's promises for every moment. Have a question, an idea or something that isn't working? Send us a message — a real person will read it.",
+						'hero.cta': 'Send us a message',
+						'hero.note': 'Prefer your own inbox? Email',
+						'hero.alt': 'Promesas support screen with a welcome message from the team',
+						'help.title': 'How we can help',
+						'help.q.t': 'Questions about the app',
+						'help.q.d': "Not sure how something works? Ask, and we'll walk you through it.",
+						'help.b.t': 'Report a problem',
+						'help.b.d': "Something not working right? Tell us what happened and we'll fix it.",
+						'help.f.t': 'Ideas & feedback',
+						'help.f.d': "A verse, a category or a feature you'd love to see? We're listening.",
+						'help.o.t': 'Anything else',
+						'help.o.d': "Partnerships, press or just a kind word — we'd love to hear from you.",
+						'contact.eyebrow': 'Get in touch',
+						'contact.title': 'Send us a message',
+						'contact.sub': 'Fill in the form and your email app will open with your message ready to send. We usually reply within a couple of days.',
+						'contact.c1': 'Real people, not a help center maze',
+						'contact.c2': 'Write in English or Spanish',
+						'contact.c3': 'Your details are only used to reply to you',
+						'contact.direct': 'Or email us directly',
+						'form.name': 'Your name',
+						'form.email': 'Your email',
+						'form.message': 'How can we help?',
+						'form.submit': 'Send message',
+						'form.hint': 'This opens your email app. Nothing is sent until you press send there.',
+						'err.name': 'Please tell us your name.',
+						'err.emailEmpty': 'Please enter your email so we can reply.',
+						'err.emailBad': "That email doesn't look right. Check it and try again.",
+						'err.messageEmpty': 'Please write your message.',
+						'err.messageShort': 'Please add a little more detail (at least 10 characters).',
+						'done.title': 'Almost there!',
+						'done.body': "Your email app should now be open with your message. Press send there and we'll get back to you soon.",
+						'done.fallback': "Didn't open? Email us at",
+						'done.copy': 'Copy my message',
+						'done.again': 'Write another',
+						'done.copied': 'Message copied. Paste it into an email to ' + EMAIL + '.',
+						'done.copyFail': 'Couldn’t copy automatically. Please select and copy your message.',
+						'mail.subject': 'Promesas — message from',
+						'mail.from': 'From',
+						'footer.tag': "God's promises for every day.",
+						'footer.contact': 'Contact',
+						'footer.form': 'Contact form',
+						'footer.more': 'More',
+						'footer.app': 'Get the iOS app',
+						'footer.privacy': 'Privacy Policy'
+					},
+					es: {
+						'meta.title': 'Contacta a Promesas — Estamos para ayudarte',
+						'skip': 'Ir al formulario de contacto',
+						'nav.help': 'Cómo ayudamos',
+						'nav.contact': 'Contacto',
+						'nav.cta': 'Escríbenos',
+						'hero.l1': 'Estamos',
+						'hero.l2': 'aquí',
+						'hero.l3': 'para ti',
+						'hero.sub': 'Promesas es un pequeño equipo que ayuda a las personas a encontrar las promesas de Dios para cada momento. ¿Tienes una pregunta, una idea o algo que no funciona? Escríbenos — una persona real leerá tu mensaje.',
+						'hero.cta': 'Envíanos un mensaje',
+						'hero.note': '¿Prefieres tu propio correo? Escribe a',
+						'hero.alt': 'Pantalla de soporte de Promesas con un mensaje de bienvenida del equipo',
+						'help.title': 'Cómo podemos ayudarte',
+						'help.q.t': 'Preguntas sobre la app',
+						'help.q.d': '¿No sabes cómo funciona algo? Pregúntanos y te guiamos paso a paso.',
+						'help.b.t': 'Reportar un problema',
+						'help.b.d': '¿Algo no funciona bien? Cuéntanos qué pasó y lo arreglaremos.',
+						'help.f.t': 'Ideas y comentarios',
+						'help.f.d': '¿Un versículo, una categoría o una función que te gustaría ver? Te escuchamos.',
+						'help.o.t': 'Cualquier otra cosa',
+						'help.o.d': 'Alianzas, prensa o simplemente unas palabras amables — nos encantará saber de ti.',
+						'contact.eyebrow': 'Ponte en contacto',
+						'contact.title': 'Envíanos un mensaje',
+						'contact.sub': 'Completa el formulario y se abrirá tu app de correo con tu mensaje listo para enviar. Normalmente respondemos en un par de días.',
+						'contact.c1': 'Personas reales, no un laberinto de ayuda',
+						'contact.c2': 'Escríbenos en español o en inglés',
+						'contact.c3': 'Tus datos solo se usan para responderte',
+						'contact.direct': 'O escríbenos directamente',
+						'form.name': 'Tu nombre',
+						'form.email': 'Tu correo electrónico',
+						'form.message': '¿Cómo podemos ayudarte?',
+						'form.submit': 'Enviar mensaje',
+						'form.hint': 'Esto abre tu app de correo. No se envía nada hasta que pulses enviar allí.',
+						'err.name': 'Por favor, dinos tu nombre.',
+						'err.emailEmpty': 'Por favor, escribe tu correo para poder responderte.',
+						'err.emailBad': 'Ese correo no parece correcto. Revísalo e inténtalo de nuevo.',
+						'err.messageEmpty': 'Por favor, escribe tu mensaje.',
+						'err.messageShort': 'Por favor, añade un poco más de detalle (al menos 10 caracteres).',
+						'done.title': '¡Ya casi!',
+						'done.body': 'Tu app de correo debería estar abierta con tu mensaje. Pulsa enviar allí y te responderemos pronto.',
+						'done.fallback': '¿No se abrió? Escríbenos a',
+						'done.copy': 'Copiar mi mensaje',
+						'done.again': 'Escribir otro',
+						'done.copied': 'Mensaje copiado. Pégalo en un correo a ' + EMAIL + '.',
+						'done.copyFail': 'No se pudo copiar automáticamente. Selecciona y copia tu mensaje.',
+						'mail.subject': 'Promesas — mensaje de',
+						'mail.from': 'De',
+						'footer.tag': 'Las promesas de Dios para cada día.',
+						'footer.contact': 'Contacto',
+						'footer.form': 'Formulario de contacto',
+						'footer.more': 'Más',
+						'footer.app': 'Descarga la app para iOS',
+						'footer.privacy': 'Política de privacidad'
+					}
+				};
+
+				var lang = 'en';
+				var t = function (key) { return (I18N[lang] && I18N[lang][key]) || I18N.en[key] || ''; };
+
+				var store = {
+					get: function () { try { return localStorage.getItem('promesas-lang'); } catch (e) { return null; } },
+					set: function (v) { try { localStorage.setItem('promesas-lang', v); } catch (e) {} }
+				};
+
+				var lastErrors = {};
+
+				function applyLang(next) {
+					lang = I18N[next] ? next : 'en';
+					document.documentElement.lang = lang;
+					document.title = t('meta.title');
+					document.querySelectorAll('[data-i18n]').forEach(function (el) { el.textContent = t(el.getAttribute('data-i18n')); });
+					document.querySelectorAll('[data-i18n-alt]').forEach(function (el) { el.alt = t(el.getAttribute('data-i18n-alt')); });
+					document.querySelectorAll('.lang-toggle button').forEach(function (b) {
+						b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false');
+					});
+					// Re-render any visible validation messages in the new language
+					Object.keys(lastErrors).forEach(function (id) { setError(id, lastErrors[id]); });
+				}
+
+				document.querySelectorAll('.lang-toggle button').forEach(function (b) {
+					b.addEventListener('click', function () {
+						var next = b.getAttribute('data-lang');
+						store.set(next);
+						applyLang(next);
+					});
+				});
+
+				var saved = store.get();
+				var browser = (navigator.language || 'en').slice(0, 2).toLowerCase();
+				applyLang(saved || (browser === 'es' ? 'es' : 'en'));
+
+				// Contact form (mailto)
+				var form = document.getElementById('contact-form');
+				var status = document.getElementById('form-status');
+				var fields = {
+					name: document.getElementById('cf-name'),
+					email: document.getElementById('cf-email'),
+					message: document.getElementById('cf-message')
+				};
+				var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+				var lastBody = '';
+
+				function setError(id, key) {
+					var input = fields[id];
+					var out = document.getElementById(input.id + '-err');
+					if (key) {
+						lastErrors[id] = key;
+						input.setAttribute('aria-invalid', 'true');
+						out.textContent = t(key);
+					} else {
+						delete lastErrors[id];
+						input.removeAttribute('aria-invalid');
+						out.textContent = '';
+					}
+				}
+
+				function check(id) {
+					var v = fields[id].value.trim();
+					var key = null;
+					if (id === 'name' && !v) key = 'err.name';
+					if (id === 'email') key = !v ? 'err.emailEmpty' : (!EMAIL_RE.test(v) ? 'err.emailBad' : null);
+					if (id === 'message') key = !v ? 'err.messageEmpty' : (v.length < 10 ? 'err.messageShort' : null);
+					setError(id, key);
+					return !key;
+				}
+
+				Object.keys(fields).forEach(function (id) {
+					fields[id].addEventListener('blur', function () { if (fields[id].value) check(id); });
+					fields[id].addEventListener('input', function () { if (lastErrors[id]) check(id); });
+				});
+
+				form.addEventListener('submit', function (e) {
+					e.preventDefault();
+					var firstBad = null;
+					['name', 'email', 'message'].forEach(function (id) {
+						if (!check(id) && !firstBad) firstBad = fields[id];
+					});
+					if (firstBad) { firstBad.focus(); return; }
+
+					var name = fields.name.value.trim();
+					var email = fields.email.value.trim();
+					var message = fields.message.value.trim();
+					lastBody = message + '\n\n— ' + t('mail.from') + ': ' + name + ' <' + email + '>';
+					var href = 'mailto:' + EMAIL +
+						'?subject=' + encodeURIComponent(t('mail.subject') + ' ' + name) +
+						'&body=' + encodeURIComponent(lastBody);
+
+					window.location.href = href;
+
+					form.hidden = true;
+					status.hidden = false;
+					document.getElementById('copy-feedback').textContent = '';
+					status.focus();
+				});
+
+				document.getElementById('new-message').addEventListener('click', function () {
+					form.reset();
+					Object.keys(fields).forEach(function (id) { setError(id, null); });
+					status.hidden = true;
+					form.hidden = false;
+					fields.name.focus();
+				});
+
+				document.getElementById('copy-message').addEventListener('click', function () {
+					var fb = document.getElementById('copy-feedback');
+					var text = 'To: ' + EMAIL + '\n\n' + lastBody;
+					var done = function () { fb.textContent = t('done.copied'); };
+					var fail = function () { fb.textContent = t('done.copyFail'); };
+					if (navigator.clipboard && navigator.clipboard.writeText) {
+						navigator.clipboard.writeText(text).then(done, fail);
+					} else {
+						fail();
+					}
+				});
+
+				document.querySelectorAll('.year').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+
+				// The privacy policy used to live at #privacy; keep old links working
+				if (location.hash === '#privacy') location.replace('privacy.html');
+
+				// Shadow the nav once the page scrolls
+				var nav = document.querySelector('.nav');
+				var onScroll = function () { nav.classList.toggle('is-scrolled', window.scrollY > 8); };
+				window.addEventListener('scroll', onScroll, { passive: true });
+				onScroll();
+			})();
 		</script>
 
 	</body>
